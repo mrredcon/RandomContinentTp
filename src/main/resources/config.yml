@@ -1,0 +1,17 @@
+boundaries:
+  na:
+    min-x: -3000
+    min-z: -3000
+    max-x: 3000
+    max-z: 3000
+  sa:
+    min-x: -2000
+    min-z: -2000
+    max-x: 2000
+    max-z: 2000
+
+# The cooldown in seconds to apply after successfully teleporting in seconds    
+cooldown: 30
+
+# Cost of successfully teleporting
+cost: 3.2

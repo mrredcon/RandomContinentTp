@@ -1,0 +1,30 @@
+name: RandomContinentTp
+
+author: mrredcon
+
+main: io.github.mrredcon.randomcontinenttp.RandomContinentTp
+
+version: 1.0
+
+api-version: 1.13
+
+commands:
+    rctp:
+        description: Main command of the plugin
+        permission: rctp.use
+        permission-message: You do not have access to the RCTP plugin.
+        usage: |
+           /<command> reload - reloads the config file
+        
+permissions:
+    rctp.*:
+      description: Gives access to all RCTP commands
+      children:
+        rctp.reload: true
+        rctp.use: true
+    rctp.use:
+      description: Allows players to randomly teleport
+      default: true
+    rctp.reload:
+        description: Reloads the config file
+        default: op
